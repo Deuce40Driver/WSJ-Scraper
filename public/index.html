@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+
+  <head>
+
+    <meta charset = "UTF-8">
+    <title>Wall Street Journal - What's News Scraper</title>
+    <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <style>
+      body {
+        background-image: url("./assets/images/730981.jpg");
+      }
+      p {
+        text-decoration-color: white
+      }
+      .jumbotron {
+        background-color: rgba(0, 0, 0, .5);
+        border-bottom: 2px solid white
+      }
+      .card {
+        background-color: rgba(0, 0, 0, .5);
+        width: 100%
+      }
+      #article {
+        display: inline-block;
+        width: 100%
+      }
+    </style>
+
+  </head>
+
+
+
+  <body>
+
+    <header>
+      <div class="jumbotron">
+        <h1 class="display-4"><img src = "./assets/images/the-wall-street-journal-logo.jpg" width = 100% /></h1>
+        <p class="lead text-white">What's News! A Wall Street Journal Headline Scraper Powered by Mongoose.</p>
+        <hr class="my-4 border-white">
+        <a class="btn btn-lite btn-lg text-white border-white" href="/scrape" role="button" id="getBtn" onClick="">Srape New Articles</a>
+        <a class="btn btn-lite btn-lg text-white border-white" href="/articles" role="button" id="savedBtn">All Scraped Articles</a>
+      </div>
+    </header>
+
+    <div class = "container">
+      <div class="card border-white">
+        <h4 class="card-header text-white" id="title"></h4>
+        <div class="card-body border-top">
+          <h5 class="card-title text-white" id="link"></h5>
+          <p class="card-text text-white" id="summary"></p>
+          <a href="#" class="btn btn-lite text-white border-white">Notes</a>
+          <a href="#" class="btn btn-lite text-white border-white">Save</a>
+        </div>
+      </div>
+    </div>
+
+<!--  
+    <footer class = "jumbotron">
+      <nav class="nav nav-pills nav-justified">
+        <a class="nav-item nav-link" href="#">Active</a>
+        <a class="nav-item nav-link" href="#">Link</a>
+        <a class="nav-item nav-link" href="#">Link</a>
+        <a class="nav-item nav-link" href="#">Disabled</a>
+      </nav>
+    </footer>
+-->
+    <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src = "app.js"></script>
+  
+  </body>
+
+</html>
